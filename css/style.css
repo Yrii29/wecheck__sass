@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap');
+
+
+/* -------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------- */
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------------------------------------------- */
+.page {
+  flex: 1 1 auto;
+}
+
+.page__main {}
+
+/* -------------------------------------------------------- */
+[class*="__container"] {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+/*----------------------------------------------------------------------*/
+
+.header {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 106px;
+  align-items: center;
+  background-color: #177165;
+}
+
+.header__logo {
+  margin-left: 15px;
+
+}
+
+.header__menu {
+  padding-right: 60px;
+
+}
+
+.menu__list {
+  display: flex;
+  margin-left: 215px;
+
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu__link {
+  font-weight: 400;
+  color: #A4D6CF;
+}
+
+.menu__link:after .menu__link:hover {
+  text-decoration: underline;
+
+}
+
+
+
+
+.header__tel {
+  width: 310px;
+  height: 58px;
+  margin-left: auto;
+  justify-content: center;
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: baseline;
+  background-image: url(../img/header/Call.svg);
+  position: relative;
+  top: 10px;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.header__logo {
+  margin: 31px 0;
+}
+
+.tel__list {
+
+  font-weight: 400;
+  margin: auto 0;
+  color: #FFFFFF;
+
+}
+
+.tel__item {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.header__p-tel {
+  font-weight: 400;
+  color: #A4D6CF;
+}
+
+/* ---------------------sechin1------------------------------------ */
+
+
+
+.hero {
+  padding-bottom: 80px;
+}
+
+.hero__container {
+  display: flex;
+  background-color: #177165;
+  height: 788px;
+  margin-bottom: 115px;
+}
+
+.hero__content {
+
+  margin-right: 30px;
+  padding-left: 120px;
+  height: 588px;
+  width: 550px;
+  left: 15px;
+  top: 0px;
+  border-radius: 0px;
+
+}
+
+.hero__text {
+  margin: 0 28px 19px 15px;
+  color: #A4D6CF;
+}
+
+.hero__title {
+  margin-bottom: 15px;
+  margin-right: 95px;
+  width: 455px;
+  left: 0px;
+  top: 48px;
+  color: #FFFFFF;
+  font-size: 60px;
+  font-style: Regular;
+}
+
+.hero__decor {}
+
+.decor-hero {}
+
+.action-hero__button {
+  font-family: Roboto;
+  background-color: #FFFFFF;
+  display: inline-block;
+  width: 212px;
+  padding: 9px 52px;
+  color: #177165;
+}
+
+/* ---------------------------------sechion-------------------- */
+
+
+.page__main-work {
+  height: 1330px;
+}
+
+.work__container {}
+
+.work__content-title {
+  margin-bottom: 50px;
+  width: 1140px;
+
+}
+
+.work__content-text {
+  margin-bottom: 10px;
+  color: #777777;
+  font-family: Roboto;
+  font-size: 18px;
+
+}
+
+.work__content-title2 {
+  font-weight: 400;
+  font-size: 48px;
+  font-family: Playfair Display;
+  margin-right: 143px;
+  color: #177165;
+}
+
+
+.work__decor-text {
+  display: flex;
+}
+
+.work__img-text {
+  width: 463px;
+  margin-left: 120px;
+  margin-top: 73px;
+}
+
+.work__h2-text {
+  color: #177165;
+  font-weight: 400;
+  font-size: 32px;
+  font-family: Playfair Display;
+  font-style: Regular;
+  margin-bottom: 26px;
+}
+
+.work__p-text {
+  width: 439px;
+  color: #777777;
+  font-weight: 400;
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.work__thesis-text {
+  width: 438;
+  color: #177165;
+  font-family: Playfair Display;
+  font-style: Regular;
+  font-size: 22px;
+  margin-bottom: 36px;
+}
+
+.work__decor {
+  margin-top: 90px;
+  width: 212px;
+  border: 2px solid #177165;
+  padding: 10px 50px 8px 60px;
+}
+
+.work__span {
+  margin-left: 4px;
+}
+
+.work__button {
+  color: #177165;
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 16px;
+}
+
+
+/* -----------------------------------section2---------- */
+
+
+.page__main-farmzi {
+  background-color: #E1F4F2;
+  padding: 100px 150px;
+}
+
+
+
+.farmzi__content-text {
+  margin-bottom: 10px;
+  color: #777777;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.farmzi__content-title2 {
+  font-weight: 400;
+  font-size: 48px;
+  font-family: Playfair Display;
+  color: #177165;
+  margin-bottom: 50px;
+}
+
+.farmzi__content-list {
+  display: flex;
+}
+
+.farmzi__content-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.farmzi__content-img {
+  margin-bottom: 30px;
+}
+
+.farmzi__content-p1 {
+  color: #777777;
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.farmzi__content-p2 {
+  color: #177165;
+  font-size: 22px;
+  font-family: Playfair Display;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
+.farmzi__div {
+  display: flex;
+  justify-content: center;
+}
+
+.farmzi__button {
+  color: #177165;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  width: 212px;
+  border: 2px solid #177165;
+  justify-content: center;
+  padding: 12px 9px;
+}
+
+.farmzi__span {
+  color: #177165;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+/* 
+-----------------------------------contact------------------------- */
+
+.page__main-contact {
+  background-color: #177165;
+}
+
+.contact__container {
+  padding: 80px 0;
+  display: flex;
+
+}
+
+.contact__content-text {
+  color: #A4D6CF;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contact__content-title {
+  width: 680px;
+  color: #FFFFFF;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-weight: 400;
+  margin-right: 40px;
+}
+
+
+.contact__content-wrap {
+  background-color: #23786D;
+  width: 465px;
+  margin: 55px 0;
+}
+
+.contact__content-inner {}
