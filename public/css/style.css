@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap');
-
-
-/* -------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap");
 *,
 *::before,
 *::after {
@@ -10,15 +7,13 @@
   border: 0;
   padding: 0;
   border: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
-/* -------------------------------------------------------- */
 
 html,
 body {
   height: 100%;
-
 }
 
 li {
@@ -29,32 +24,31 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------------------------------- */
 .wrapper {
   overflow: hidden;
   min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-/* -------------------------------------------------------- */
 .page {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
-.page__main {}
-
-/* -------------------------------------------------------- */
-[class*="__container"] {
+[class*=__container] {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0px 20px;
 }
 
-/*----------------------------------------------------------------------*/
-
 .header {
-
   top: 0;
   left: 0;
   width: 100%;
@@ -62,27 +56,32 @@ a {
 }
 
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 106px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #177165;
 }
 
 .header__logo {
   margin-left: 15px;
-
 }
 
 .header__menu {
   padding-right: 60px;
-
 }
 
 .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 215px;
-
 }
 
 .menu__item:not(:last-child) {
@@ -96,20 +95,25 @@ a {
 
 .menu__link:after .menu__link:hover {
   text-decoration: underline;
-
 }
-
-
-
 
 .header__tel {
   width: 310px;
   height: 58px;
   margin-left: auto;
-  justify-content: center;
-  flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   background-image: url(../img/header/Call.svg);
   position: relative;
   top: 10px;
@@ -122,11 +126,9 @@ a {
 }
 
 .tel__list {
-
   font-weight: 400;
   margin: auto 0;
   color: #FFFFFF;
-
 }
 
 .tel__item {
@@ -139,15 +141,13 @@ a {
   color: #A4D6CF;
 }
 
-/* ---------------------sechin1------------------------------------ */
-
-
-
 .hero {
   padding-bottom: 80px;
 }
 
 .hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #177165;
   height: 788px;
@@ -155,7 +155,6 @@ a {
 }
 
 .hero__content {
-
   margin-right: 30px;
   padding-left: 120px;
   height: 588px;
@@ -163,7 +162,6 @@ a {
   left: 15px;
   top: 0px;
   border-radius: 0px;
-
 }
 
 .hero__text {
@@ -182,10 +180,6 @@ a {
   font-style: Regular;
 }
 
-.hero__decor {}
-
-.decor-hero {}
-
 .action-hero__button {
   font-family: Roboto;
   background-color: #FFFFFF;
@@ -195,19 +189,13 @@ a {
   color: #177165;
 }
 
-/* ---------------------------------sechion-------------------- */
-
-
 .page__main-work {
   height: 1330px;
 }
 
-.work__container {}
-
 .work__content-title {
   margin-bottom: 50px;
   width: 1140px;
-
 }
 
 .work__content-text {
@@ -215,7 +203,6 @@ a {
   color: #777777;
   font-family: Roboto;
   font-size: 18px;
-
 }
 
 .work__content-title2 {
@@ -226,8 +213,9 @@ a {
   color: #177165;
 }
 
-
 .work__decor-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -283,16 +271,10 @@ a {
   font-size: 16px;
 }
 
-
-/* -----------------------------------section2---------- */
-
-
 .page__main-farmzi {
   background-color: #E1F4F2;
   padding: 100px 150px;
 }
-
-
 
 .farmzi__content-text {
   margin-bottom: 10px;
@@ -310,6 +292,8 @@ a {
 }
 
 .farmzi__content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -338,8 +322,12 @@ a {
 }
 
 .farmzi__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .farmzi__button {
@@ -347,10 +335,14 @@ a {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 212px;
   border: 2px solid #177165;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 12px 9px;
 }
 
@@ -362,17 +354,15 @@ a {
   margin-left: 10px;
 }
 
-/* 
------------------------------------contact------------------------- */
-
 .page__main-contact {
   background-color: #177165;
 }
 
 .contact__container {
   padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-
 }
 
 .contact__content-text {
@@ -392,11 +382,8 @@ a {
   margin-right: 40px;
 }
 
-
 .contact__content-wrap {
   background-color: #23786D;
   width: 465px;
   margin: 55px 0;
 }
-
-.contact__content-inner {}
