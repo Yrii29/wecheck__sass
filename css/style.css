@@ -54,7 +54,6 @@ a {
   width: 100%;
   z-index: 50;
 }
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,13 +67,24 @@ a {
           align-items: center;
   background-color: #177165;
 }
-
-.header__logo {
-  margin-left: 15px;
+.header__tel {
+  width: 310px;
+  height: 58px;
+  margin-left: auto;
+  position: relative;
+  padding-left: 15px;
 }
-
-.header__menu {
-  padding-right: 60px;
+.header__tel::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 100%;
+  width: 44px;
+  height: 44px;
+  background-image: url(../img/header/Call.svg);
+  top: 10px;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .menu__list {
@@ -90,35 +100,11 @@ a {
 
 .menu__link {
   font-weight: 400;
-  color: #A4D6CF;
+  color: #a4d6cf;
 }
 
 .menu__link:after .menu__link:hover {
   text-decoration: underline;
-}
-
-.header__tel {
-  width: 310px;
-  height: 58px;
-  margin-left: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  background-image: url(../img/header/Call.svg);
-  position: relative;
-  top: 10px;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .header__logo {
@@ -128,7 +114,7 @@ a {
 .tel__list {
   font-weight: 400;
   margin: auto 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .tel__item {
@@ -138,7 +124,7 @@ a {
 
 .header__p-tel {
   font-weight: 400;
-  color: #A4D6CF;
+  color: #a4d6cf;
 }
 
 .hero {

@@ -1,33 +1,60 @@
 .header {
-
   top: 0;
   left: 0;
   width: 100%;
   z-index: 50;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 106px;
+    align-items: center;
+    background-color: #177165;
+  }
+
+  &__tel {
+    width: 310px;
+    height: 58px;
+    margin-left: auto;
+    position: relative;
+    padding-left: 15px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 100%;
+      width: 44px;
+      height: 44px;
+      background-image: url(../img/header/Call.svg);
+      top: 10px;
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  min-height: 106px;
-  align-items: center;
-  background-color: #177165;
-}
+// .header__container {
+//   display: flex;
+//   justify-content: space-between;
+//   min-height: 106px;
+//   align-items: center;
+//   background-color: #177165;
+// }
 
-.header__logo {
-  margin-left: 15px;
+// .header__logo {
+//   margin-left: 15px;
 
-}
+// }
 
-.header__menu {
-  padding-right: 60px;
+// .header__menu {
+//   padding-right: 60px;
 
-}
+// }
 
 .menu__list {
   display: flex;
   margin-left: 215px;
-
 }
 
 .menu__item:not(:last-child) {
@@ -36,42 +63,36 @@
 
 .menu__link {
   font-weight: 400;
-  color: #A4D6CF;
+  color: #a4d6cf;
 }
 
 .menu__link:after .menu__link:hover {
   text-decoration: underline;
-
 }
 
-
-
-
-.header__tel {
-  width: 310px;
-  height: 58px;
-  margin-left: auto;
-  justify-content: center;
-  flex-direction: row-reverse;
-  display: flex;
-  align-items: baseline;
-  background-image: url(../img/header/Call.svg);
-  position: relative;
-  top: 10px;
-  background-size: auto;
-  background-repeat: no-repeat;
-}
+// .header__tel {
+//   width: 310px;
+//   height: 58px;
+//   margin-left: auto;
+//   justify-content: center;
+//   flex-direction: row-reverse;
+//   display: flex;
+//   align-items: baseline;
+//   background-image: url(../img/header/Call.svg);
+//   position: relative;
+//   top: 10px;
+//   background-size: auto;
+//   background-repeat: no-repeat;
+// }
 
 .header__logo {
   margin: 31px 0;
 }
 
 .tel__list {
-
   font-weight: 400;
   margin: auto 0;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 .tel__item {
@@ -81,5 +102,5 @@
 
 .header__p-tel {
   font-weight: 400;
-  color: #A4D6CF;
+  color: #a4d6cf;
 }
