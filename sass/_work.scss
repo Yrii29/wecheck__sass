@@ -1,84 +1,96 @@
-.page__main-work {
+.work {
   height: 1330px;
-}
 
-.work__container {}
+  &__content-title {
+    margin-bottom: 50px;
+    width: 1140px;
+  }
 
-.work__content-title {
-  margin-bottom: 50px;
-  width: 1140px;
+  &__content-text {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: #777777;
+    font-family: Roboto;
+    font-size: 18px;
+    position: relative;
 
-}
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 100%;
+      width: 40px;
+      height: 1px;
+      top: 8px;
+      left: -50px;
+      right: 10px;
+      background-image: url(../img/main/word.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  }
 
-.work__content-text {
-  margin-bottom: 10px;
-  color: #777777;
-  font-family: Roboto;
-  font-size: 18px;
+  &__content-title2 {
+    font-weight: 400;
+    font-size: 48px;
+    font-family: Playfair Display;
+    margin-right: 143px;
+    color: #177165;
+  }
 
-}
+  &__decor-text {
+    display: flex;
+  }
 
-.work__content-title2 {
-  font-weight: 400;
-  font-size: 48px;
-  font-family: Playfair Display;
-  margin-right: 143px;
-  color: #177165;
-}
+  &__img-text {
+    width: 463px;
+    margin-left: 120px;
+    margin-top: 73px;
+  }
 
+  &__h2-text {
+    color: #177165;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: Playfair Display;
+    font-style: Regular;
+    margin-bottom: 26px;
+  }
 
-.work__decor-text {
-  display: flex;
-}
+  &__p-text {
+    width: 439px;
+    color: #777777;
+    font-weight: 400;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 
-.work__img-text {
-  width: 463px;
-  margin-left: 120px;
-  margin-top: 73px;
-}
+  &__thesis-text {
+    width: 438;
+    color: #177165;
+    font-family: Playfair Display;
+    font-style: Regular;
+    font-size: 22px;
+    margin-bottom: 36px;
+  }
 
-.work__h2-text {
-  color: #177165;
-  font-weight: 400;
-  font-size: 32px;
-  font-family: Playfair Display;
-  font-style: Regular;
-  margin-bottom: 26px;
-}
+  &__decor {
+    margin-top: 90px;
+    width: 212px;
+    border: 2px solid #177165;
+    padding: 10px 50px 8px 60px;
+  }
 
-.work__p-text {
-  width: 439px;
-  color: #777777;
-  font-weight: 400;
-  font-family: Roboto;
-  font-style: Regular;
-  font-size: 16px;
-  margin-bottom: 15px;
-}
+  &__span {
+    margin-left: 4px;
+  }
 
-.work__thesis-text {
-  width: 438;
-  color: #177165;
-  font-family: Playfair Display;
-  font-style: Regular;
-  font-size: 22px;
-  margin-bottom: 36px;
-}
-
-.work__decor {
-  margin-top: 90px;
-  width: 212px;
-  border: 2px solid #177165;
-  padding: 10px 50px 8px 60px;
-}
-
-.work__span {
-  margin-left: 4px;
-}
-
-.work__button {
-  color: #177165;
-  font-family: Roboto;
-  font-style: Regular;
-  font-size: 16px;
+  &__button {
+    color: #177165;
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 16px;
+  }
 }

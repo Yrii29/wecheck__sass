@@ -118,7 +118,7 @@ a {
 }
 
 .tel__item {
-  margin-top: 5px;
+  margin-top: 8px;
   margin-left: 20px;
 }
 
@@ -130,7 +130,6 @@ a {
 .hero {
   padding-bottom: 80px;
 }
-
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,7 +138,6 @@ a {
   height: 788px;
   margin-bottom: 115px;
 }
-
 .hero__content {
   margin-right: 30px;
   padding-left: 120px;
@@ -149,48 +147,95 @@ a {
   top: 0px;
   border-radius: 0px;
 }
-
-.hero__text {
-  margin: 0 28px 19px 15px;
-  color: #A4D6CF;
+.hero__text-one {
+  margin: 0 28px 19px 50px;
+  color: #a4d6cf;
+  position: relative;
 }
-
+.hero__text-one::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 100%;
+  width: 40px;
+  height: 1px;
+  top: 8px;
+  left: -50px;
+  right: 10px;
+  background-image: url(../img/main/Rectangle.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 .hero__title {
   margin-bottom: 15px;
   margin-right: 95px;
   width: 455px;
   left: 0px;
   top: 48px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 60px;
   font-style: Regular;
 }
-
-.action-hero__button {
+.hero__text-two {
+  margin: 0 28px 60px 35px;
+  color: #a4d6cf;
+  position: relative;
+}
+.hero__text-two::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 100%;
+  width: 40px;
+  height: 1px;
+  top: 8px;
+  left: -35px;
+  right: 10px;
+  background-image: url(../img/main/Rectangle2.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.hero__button {
   font-family: Roboto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: inline-block;
   width: 212px;
   padding: 9px 52px;
   color: #177165;
 }
-
-.page__main-work {
-  height: 1330px;
+.hero__span {
+  margin-left: 4px;
 }
 
+.work {
+  height: 1330px;
+}
 .work__content-title {
   margin-bottom: 50px;
   width: 1140px;
 }
-
 .work__content-text {
+  margin-left: 50px;
   margin-bottom: 10px;
   color: #777777;
   font-family: Roboto;
   font-size: 18px;
+  position: relative;
 }
-
+.work__content-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 100%;
+  width: 40px;
+  height: 1px;
+  top: 8px;
+  left: -50px;
+  right: 10px;
+  background-image: url(../img/main/word.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 .work__content-title2 {
   font-weight: 400;
   font-size: 48px;
@@ -198,19 +243,16 @@ a {
   margin-right: 143px;
   color: #177165;
 }
-
 .work__decor-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .work__img-text {
   width: 463px;
   margin-left: 120px;
   margin-top: 73px;
 }
-
 .work__h2-text {
   color: #177165;
   font-weight: 400;
@@ -219,7 +261,6 @@ a {
   font-style: Regular;
   margin-bottom: 26px;
 }
-
 .work__p-text {
   width: 439px;
   color: #777777;
@@ -229,7 +270,6 @@ a {
   font-size: 16px;
   margin-bottom: 15px;
 }
-
 .work__thesis-text {
   width: 438;
   color: #177165;
@@ -238,18 +278,15 @@ a {
   font-size: 22px;
   margin-bottom: 36px;
 }
-
 .work__decor {
   margin-top: 90px;
   width: 212px;
   border: 2px solid #177165;
   padding: 10px 50px 8px 60px;
 }
-
 .work__span {
   margin-left: 4px;
 }
-
 .work__button {
   color: #177165;
   font-family: Roboto;
@@ -257,18 +294,32 @@ a {
   font-size: 16px;
 }
 
-.page__main-farmzi {
-  background-color: #E1F4F2;
+.farmzi {
+  background-color: #e1f4f2;
   padding: 100px 150px;
 }
-
 .farmzi__content-text {
   margin-bottom: 10px;
   color: #777777;
   font-family: Roboto;
   font-size: 18px;
+  position: relative;
+  margin-left: 50px;
 }
-
+.farmzi__content-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 100%;
+  width: 40px;
+  height: 1px;
+  top: 8px;
+  left: -50px;
+  right: 10px;
+  background-image: url(../img/main/farmzi.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 .farmzi__content-title2 {
   font-weight: 400;
   font-size: 48px;
@@ -276,29 +327,40 @@ a {
   color: #177165;
   margin-bottom: 50px;
 }
-
 .farmzi__content-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .farmzi__content-item:not(:last-child) {
   margin-right: 50px;
 }
-
 .farmzi__content-img {
   margin-bottom: 30px;
 }
-
 .farmzi__content-p1 {
   color: #777777;
   font-size: 15px;
   font-family: Roboto;
   font-weight: 400;
   margin-bottom: 5px;
+  position: relative;
+  margin-left: 50px;
 }
-
+.farmzi__content-p1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 100%;
+  width: 40px;
+  height: 1px;
+  top: 8px;
+  left: -50px;
+  right: 10px;
+  background-image: url(../img/main/farmzi.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 .farmzi__content-p2 {
   color: #177165;
   font-size: 22px;
@@ -306,7 +368,6 @@ a {
   font-weight: 400;
   margin-bottom: 70px;
 }
-
 .farmzi__div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,7 +376,6 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .farmzi__button {
   color: #177165;
   font-family: Roboto;
@@ -331,7 +391,6 @@ a {
           justify-content: center;
   padding: 12px 9px;
 }
-
 .farmzi__span {
   color: #177165;
   font-family: Roboto;
@@ -340,36 +399,70 @@ a {
   margin-left: 10px;
 }
 
-.page__main-contact {
+.contact {
   background-color: #177165;
 }
-
 .contact__container {
   padding: 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .contact__content-text {
-  color: #A4D6CF;
+  color: #a4d6cf;
   font-family: Roboto;
   font-size: 17px;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-left: 50px;
+  position: relative;
 }
-
+.contact__content-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  left: -50px;
+  top: 8px;
+  background-image: url(../img/main/contact.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 .contact__content-title {
   width: 680px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Playfair Display;
   font-size: 48px;
   font-weight: 400;
   margin-right: 40px;
 }
-
 .contact__content-wrap {
-  background-color: #23786D;
+  background-color: #23786d;
   width: 465px;
-  margin: 55px 0;
+  margin: 60px 0;
+}
+.contact__content-inner {
+  margin-top: 20px;
+}
+.contact__list {
+  margin: 20px 133px 20px 133px;
+  position: relative;
+  padding-left: 30px;
+}
+.contact__list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 100%;
+  width: 44px;
+  height: 44px;
+  background-image: url(../img/header/Call.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.contact .contact__item {
+  margin-top: 8px;
+  margin-left: 20px;
+  font-weight: 400;
+  color: #a4d6cf;
 }

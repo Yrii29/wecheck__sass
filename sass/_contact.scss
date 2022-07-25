@@ -1,35 +1,74 @@
-.page__main-contact {
+.contact {
   background-color: #177165;
+
+  &__container {
+    padding: 80px 0;
+    display: flex;
+  }
+
+  &__content-text {
+    color: #a4d6cf;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 50px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 1px;
+      left: -50px;
+      top: 8px;
+      background-image: url(../img/main/contact.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__content-title {
+    width: 680px;
+    color: #ffffff;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 400;
+    margin-right: 40px;
+  }
+
+  &__content-wrap {
+    background-color: #23786d;
+    width: 465px;
+    margin: 60px 0;
+  }
+
+  &__content-inner {
+    margin-top: 20px;
+  }
+
+  &__list {
+    margin: 20px 133px 20px 133px;
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 100%;
+      width: 44px;
+      height: 44px;
+      background-image: url(../img/header/Call.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contact__item {
+    margin-top: 8px;
+    margin-left: 20px;
+    font-weight: 400;
+    color: #a4d6cf;
+  }
 }
-
-.contact__container {
-  padding: 80px 0;
-  display: flex;
-
-}
-
-.contact__content-text {
-  color: #A4D6CF;
-  font-family: Roboto;
-  font-size: 17px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.contact__content-title {
-  width: 680px;
-  color: #FFFFFF;
-  font-family: Playfair Display;
-  font-size: 48px;
-  font-weight: 400;
-  margin-right: 40px;
-}
-
-
-.contact__content-wrap {
-  background-color: #23786D;
-  width: 465px;
-  margin: 55px 0;
-}
-
-.contact__content-inner {}
