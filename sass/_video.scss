@@ -1,0 +1,41 @@
+.video {
+  background-color: #177165;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrap {
+    margin: 100px 50px;
+  }
+  &__text {
+    color: #a4d6cf;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 50px;
+    position: relative;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 1px;
+      left: -50px;
+      top: 8px;
+      background-image: url(../img/main/contact.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__text1 {
+    width: 680px;
+    color: #ffffff;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 400;
+    margin-right: 40px;
+  }
+}

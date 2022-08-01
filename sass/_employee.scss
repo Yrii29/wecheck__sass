@@ -1,0 +1,115 @@
+.employee {
+  background-color: #e1f4f2;
+  // padding: 100px;
+  &::before {
+    content: "";
+    width: 498px;
+    height: 850px;
+    position: absolute;
+    background-color: rgba(225, 244, 242, 0.8);
+    z-index: 1;
+  }
+  // &__picture {
+  //   position: relative;
+
+  //   &::before {
+  //     content: "";
+  //     width: 498px;
+  //     height: 850px;
+
+  //     position: absolute;
+  //     background-color: rgba(225, 244, 242, 0.8);
+  //   }
+  // }
+
+  &__content-text {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    z-index: 2;
+    align-items: flex-end;
+  }
+
+  &__content-subtitle {
+    margin-right: 430px;
+    margin-bottom: 10px;
+    color: #777777;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      width: 40px;
+      height: 1px;
+      top: 8px;
+      left: -50px;
+      right: 10px;
+      background-image: url(../img/main/farmzi.svg);
+    }
+  }
+
+  &__content-title {
+    color: #177165;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: Playfair Display;
+    margin-bottom: 50px;
+  }
+
+  &__content-wrap {
+  }
+
+  &__content-inner {
+  }
+
+  &__content-list {
+    display: flex;
+    padding-bottom: 100px;
+  }
+
+  &__content-item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__content-lead {
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      width: 40px;
+      height: 1px;
+      top: 8px;
+      left: -50px;
+      right: 10px;
+      background-image: url(../img/main/farmzi.svg);
+    }
+  }
+
+  &__content-lead1 {
+    color: #177165;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: Playfair Display;
+    margin-bottom: 20px;
+  }
+
+  &__content-subject {
+    color: #777777;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Roboto;
+  }
+}
