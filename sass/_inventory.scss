@@ -1,0 +1,43 @@
+.inventory {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &__wrap {
+    display: flex;
+    background-color: #e1f4f2;
+    justify-content: space-around;
+  }
+
+  &__text {
+    color: #177165;
+    font-size: 45px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-top: 64px;
+    margin-bottom: 5px;
+  }
+
+  &__text1 {
+    color: #777777;
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 400;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 65px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 100%;
+      width: 40px;
+      height: 1px;
+      top: 8px;
+      left: -50px;
+      right: 10px;
+      background-image: url(../img/main/farmzi.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+    }
+  }
+}
